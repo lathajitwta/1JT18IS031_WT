@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Challenge - 2 </title>
+</head>
+<style type="text/css">
+	table,td {
+		border :3px solid black ;
+		border-collapse: collapse;
+		background-color: lightblue;
+		text-align: center;
+		font-weight: bold;
+	}
+
+</style>
+
+<body>
+  
+        <table align="center">
+            <th colspan="3">NUMBERS FROM 100 TO 1000 WITH THEIR SQUARES AND CUBES </th>
+            <tr>
+                <td>Number</td>
+                <td>Square</td>
+                <td>Cube</td>
+            </tr>
+            <script type="text/javascript"> 
+               for (var i = 100; i<= 1000; i+=100) {
+                    document.write("<tr><td>" + i + "</td><td>" + i * i + "</td><td>" + i * i * i + "</td></tr>")
+                }
+                 document.write("</table>");
+
+
+        setInterval(function () {
+            var txt = document.getElementById("text");
+            txt.style.color = "magenta";
+            txt.style.display = (txt.style.display == 'none' ? '' : 'none');
+        }, 400);
+
+    </script>
+
+    <h2 id="text" align="center">
+    	Assignment-2 Challenge Completed;
+    </h2>
+        </table>      
+</body>
+</html>
