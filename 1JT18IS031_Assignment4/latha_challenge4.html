@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Program-4</title></head>
+<body>
+<script type="text/javascript">
+var str = prompt("Enter the Input", "");
+if (!(isNaN(str))) 
+{
+var num, rev = 0,remainder;
+num = parseInt(str);
+while (num != 0)
+{
+remainder = num % 10;
+num = parseInt(num / 10);
+rev = rev * 10 + remainder;
+}
+n = str*rev;
+ 
+alert("Reverse of " + str + " is " + rev + " and their product is " + n  );
+
+}
+else
+{
+    str = str.toUpperCase();
+    function vowels(string){
+        var vowels = 'AEIOU';
+        var count = 0;
+        for(i=0; i<string.length; i++){
+            if(vowels.indexOf(string[i]) !==-1){
+                count+=1;
+            }
+        }
+        return count;
+    }
+    n = vowels(str)
+    alert("The given string" + "  '" + str +"' has " +n+ " number of vowles" )
+}
+</script>
+</body>
+</html>
